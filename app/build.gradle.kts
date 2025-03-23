@@ -1,13 +1,15 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id("com.android.application")
+    kotlin("android") version "1.9.22" // Use the correct version here
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.example.myapplication"
+    namespace = "com.example.intellicite"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.myapplication"
+        applicationId = "com.example.intellicite"
         minSdk = 34
         targetSdk = 35
         versionCode = 1
@@ -32,6 +34,11 @@ android {
 }
 
 dependencies {
+    implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("com.google.android.material:material:1.12.0")
 
     implementation(libs.appcompat)
     implementation(libs.material)

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.intellicite;
 
 import org.junit.Test;
 
