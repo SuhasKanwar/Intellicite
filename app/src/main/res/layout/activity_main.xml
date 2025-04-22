@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/welcome_page_main_background_color">
+
+    <ImageView
+        android:layout_width="396dp"
+        android:layout_height="600dp"
+        android:alpha="0.65"
+        android:scaleType="fitXY"
+        android:src="@drawable/oval_shape_welcome_page"
+        android:translationX="-120dp"
+        android:translationY="450dp" />
+
+    <ImageView
+        android:layout_width="396dp"
+        android:layout_height="600dp"
+        android:alpha="0.65"
+        android:scaleType="fitXY"
+        android:scaleX="-1"
+        android:src="@drawable/oval_shape_welcome_page"
+        android:translationX="120dp"
+        android:translationY="-200dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView"
+        android:layout_width="430dp"
+        android:layout_height="430dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="30dp"
+        card_view:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="431dp"
+            android:layout_margin="5dp"
+            android:background="#BA7CF8"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text=" Welcome to"
+                android:textColor="#121111"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="InteliCite"
+                android:textColor="#565CFB"
+                android:textSize="54sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="A place where you can manage articles and Journals..."
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Let's Get  Started..."
+                android:textColor="#040303"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#555BF8"
+                android:text="Register"
+                android:textColor="#F8F8F8"
+                android:textColorHighlight="#AF5656"
+                android:textColorLink="#847676" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#575DFB"
+                android:text="Login" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

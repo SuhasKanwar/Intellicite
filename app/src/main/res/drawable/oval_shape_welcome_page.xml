@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/blob_background.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="500dp"
+    android:height="800dp"
+    android:viewportWidth="500"
+    android:viewportHeight="800">
+    <path
+        android:fillColor="@color/welcome_page_oval_shape_color"
+        android:pathData="M 200 0 C 489 1 507 788 200 800 C 0 804 9 1 192 -1 Z"
+        android:alpha="0.2" />
+</vector>
