@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#6A5CFF" />
+    <!-- Transparent center -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- Purple border -->
+    <stroke
+        android:width="3dp"
+        android:color="#6A5CFF"/>
+
     <corners android:radius="12dp" />
 </shape>

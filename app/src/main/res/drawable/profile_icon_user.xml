@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="58dp"
+    android:height="58dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Outer Circle -->
+    <path
+        android:fillColor="#2F3651"
+        android:pathData="M24,0C10.745,0 0,10.745 0,24s10.745,24 24,24 24,-10.745 24,-24S37.255,0 24,0z"/>
+
+    <!-- Head Circle -->
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M24,12c-3.313,0 -6,2.687 -6,6s2.687,6 6,6 6,-2.687 6,-6 -2.687,-6 -6,-6z"/>
+
+    <!-- Body Arc (Torso area) -->
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M12,36c0,-6.627 5.373,-12 12,-12s12,5.373 12,12H12z"/>
+</vector>

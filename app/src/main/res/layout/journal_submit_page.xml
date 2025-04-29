@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#443D94">
+
+
+    <!-- Scrollable White Section -->
+    <RelativeLayout
+        android:id="@+id/topSection"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_top_background"
+        android:backgroundTint="@color/home_page_cards_color"
+        android:backgroundTintMode="src_atop"
+        android:clipToOutline="true"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/hamburgerIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/hamburger_icon_home_page"
+            android:background="@android:color/transparent"
+            android:contentDescription="Hamburger Menu"/>
+
+        <ImageButton
+            android:id="@+id/profileIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/profile_icon_user"
+            android:background="@android:color/transparent"
+            android:contentDescription="User Profile"/>
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="86dp"
+            android:text="Submit a Journal"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editFacultyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Name of Faculty"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <!-- Title of Research Paper -->
+        <EditText
+            android:id="@+id/editResearchTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editFacultyName"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Title of Research Paper"
+            android:inputType="textCapSentences"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topSection"
+        android:layout_marginTop="-30dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_bottom_background"
+        android:padding="20dp"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Journal Name, Publisher -->
+            <EditText
+                android:id="@+id/editJournalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Journal Name, Publisher"
+                android:backgroundTint="#7B1FA2"
+                android:padding="10dp"/>
+
+            <!-- Authors List -->
+            <EditText
+                android:id="@+id/editAuthorsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Authors' List"
+                android:backgroundTint="#7B1FA2"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Authorship -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Authorship?"
+                android:textColor="#7B1FA2"
+                android:layout_marginTop="15dp"/>
+
+            <RadioGroup
+                android:id="@+id/authorshipRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioFirstAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Author"/>
+
+                <RadioButton
+                    android:id="@+id/radioCoAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Co-Author"
+                    android:layout_marginStart="20dp"/>
+            </RadioGroup>
+
+            <!-- DOI -->
+            <EditText
+                android:id="@+id/editDOI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DOI of the Research Paper"
+                android:backgroundTint="#7B1FA2"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Date of Publication -->
+            <EditText
+                android:id="@+id/editDateOfPublication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of Publication"
+                android:backgroundTint="#7B1FA2"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Journal's Quartile -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journal's Quartile"
+                android:textColor="#7B1FA2"
+                android:layout_marginTop="15dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerQuartile"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#7B1FA2"
+                android:entries="@array/quartile_options"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is this paper Scopus Indexed?"
+                android:textColor="#7B1FA2"
+                android:layout_marginTop="15dp"/>
+
+            <RadioGroup
+                android:id="@+id/scopusIndexedRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+
+                <RadioButton
+                    android:id="@+id/radioNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:layout_marginStart="20dp"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnUploadPdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload The Document"
+                android:backgroundTint="#7B1FA2"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:padding="12dp"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:backgroundTint="#4A148C"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

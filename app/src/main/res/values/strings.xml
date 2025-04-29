@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">intellicite</string>
+    <string-array name="quartile_options">
+        <item>Q1</item>
+        <item>Q2</item>
+        <item>Q3</item>
+        <item>Q4</item>
+        <item>A*</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+
 </resources>

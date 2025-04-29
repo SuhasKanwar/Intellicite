@@ -5,4 +5,5 @@
     <color name="welcome_page_oval_shape_color">#8D8D92</color>
     <color name="welcome_page_main_background_color">#D0BEE2</color>
     <color name="register_page_background_color">#BDBCBC</color>
+    <color name="home_page_cards_color">#6F64EB</color>
 </resources>

@@ -30,14 +30,16 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/myCardView"
-        android:layout_width="430dp"
+        android:layout_width="400dp"
         android:layout_height="430dp"
-        android:layout_margin="16dp"
         android:layout_gravity="center"
-        card_view:cardCornerRadius="30dp"
-        card_view:cardElevation="10dp">
+        android:layout_margin="16dp"
+        card_view:cardCornerRadius="40dp"
+        card_view:cardElevation="10dp"
+        card_view:cardBackgroundColor="@android:color/transparent">
 
         <LinearLayout
+
             android:layout_width="wrap_content"
             android:layout_height="431dp"
             android:layout_margin="5dp"
