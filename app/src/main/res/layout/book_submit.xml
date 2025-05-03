@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#443D94"
+    android:paddingTop="25dp">
+
+    <!-- Top Section -->
+    <RelativeLayout
+        android:id="@+id/topSection"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_top_background"
+        android:backgroundTint="@color/home_page_cards_color"
+        android:clipToOutline="true"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/hamburgerIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/hamburger_icon_home_page"
+            android:background="@android:color/transparent"
+            android:contentDescription="Hamburger Menu"/>
+
+        <ImageButton
+            android:id="@+id/profileIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/profile_icon_user"
+            android:background="@android:color/transparent"
+            android:contentDescription="User Profile"/>
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="10dp"
+            android:text="Submit a Book"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editFacultyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#7B1FA2"
+            android:hint="Name of the Faculty"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:layout_marginTop="60dp"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:backgroundTint="#7B1FA2"
+            android:hint="Title of the Book"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColorHint="#FFFFFF" />
+    </RelativeLayout>
+
+    <!-- Bottom Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topSection"
+        android:layout_marginTop="-30dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_bottom_background"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is your book edited or authored?"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupEditedAuthored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <RadioButton
+                android:id="@+id/radioEdited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Edited" />
+
+            <RadioButton
+                android:id="@+id/radioAuthored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Authored"
+                android:layout_marginStart="20dp"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editAuthorsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:hint="List of all authors/editors"
+            android:backgroundTint="#7B1FA2"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/editPublisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Publisher of the book"
+            android:backgroundTint="#7B1FA2"
+            android:textColor="#000000"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/editISBN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ISBN/ISSN number of the book"
+            android:backgroundTint="#7B1FA2"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/editBookURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="URL or DOI of the book"
+            android:backgroundTint="#7B1FA2"
+            android:inputType="textUri"
+            android:minHeight="48dp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/editBookDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Publishing"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none"
+            android:textColor="#000000"
+            android:backgroundTint="#7B1FA2"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnSubmitBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="#4A148C"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"/>
+    </LinearLayout>
+</RelativeLayout>

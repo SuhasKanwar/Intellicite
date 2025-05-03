@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
     android:background="#FFFFFF">
 
     <ImageButton
@@ -97,6 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email"
+                android:textColor="#000000"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_gravity="start"
@@ -113,14 +115,15 @@
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:background="@drawable/register_input_field_roundbox"
-                android:textColor="#FFFFFF"
-                android:hintTextColor="#D1CFFF"/>
+                android:textColor="#000000" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Your Name"
                 android:textSize="20dp"
+                android:textColor="#000000"
+
                 android:textStyle="bold"
                 android:layout_gravity="start"
                 android:layout_marginTop="10dp"/>
@@ -135,17 +138,18 @@
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:background="@drawable/register_input_field_roundbox"
-                android:textColor="#FFFFFF"
-                android:hintTextColor="#D1CFFF"/>
+                android:textColor="#000000"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Your Password"
-                android:textSize="20dp"
-                android:textStyle="bold"
                 android:layout_gravity="start"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:text="Your Password"
+                android:textColor="#000000"
+
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/passwordInput"
@@ -157,8 +161,7 @@
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:background="@drawable/register_input_field_roundbox"
-                android:textColor="#FFFFFF"
-                android:hintTextColor="#D1CFFF"/>
+                android:textColor="#000000"/>
 
             <Button
                 android:id="@+id/registerButton"
@@ -167,6 +170,7 @@
                 android:text="Register"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
+                android:backgroundTint="#6A5CFF"
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>

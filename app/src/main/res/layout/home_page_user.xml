@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_marginTop="30dp"
         android:padding="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -207,6 +208,15 @@
             android:textColor="#000000" />
 
         <Button
+            android:id="@+id/conferences_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conferences"
+            android:background="@android:color/white"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp"/>
+
+        <Button
             android:id="@+id/books_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -216,14 +226,31 @@
             android:layout_marginTop="8dp" />
 
         <Button
-            android:id="@+id/others_button"
+            android:id="@+id/Books_Chapter_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Other"
+            android:text="Books_Chapters"
             android:background="@android:color/white"
             android:textColor="#000000"
             android:layout_marginTop="8dp" />
 
+        <Button
+            android:id="@+id/Projects_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Projects"
+            android:background="@android:color/white"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/Patents_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patents"
+            android:background="@android:color/white"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp" />
     </LinearLayout>
 
     <LinearLayout

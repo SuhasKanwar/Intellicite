@@ -104,6 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:backgroundTint="#575DFB"
+                android:textColor="#F8F8F8"
                 android:text="Login" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
