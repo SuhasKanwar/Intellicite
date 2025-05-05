@@ -16,6 +16,14 @@
         android:src="@drawable/register_top_arrow_button"
         android:contentDescription="Back" />
 
+    <!-- Progress bar for loading state -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="791dp"
@@ -123,7 +131,6 @@
                 android:text="Your Name"
                 android:textSize="20dp"
                 android:textColor="#000000"
-
                 android:textStyle="bold"
                 android:layout_gravity="start"
                 android:layout_marginTop="10dp"/>
@@ -147,7 +154,6 @@
                 android:layout_marginTop="10dp"
                 android:text="Your Password"
                 android:textColor="#000000"
-
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -172,6 +178,18 @@
                 android:textSize="16sp"
                 android:backgroundTint="#6A5CFF"
                 android:textStyle="bold" />
+
+            <!-- Optional: Add a "Already have an account? Login" text -->
+            <TextView
+                android:id="@+id/loginTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Already have an account? Login"
+                android:textColor="#6A5CFF"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:focusable="true"/>
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
